@@ -1,0 +1,16 @@
+.detail-page {
+    height: 100vh;
+}
+
+.row {
+
+}
+.col {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .col {
+        width: 50%;
+    }
+}
