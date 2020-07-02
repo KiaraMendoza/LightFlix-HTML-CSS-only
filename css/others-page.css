@@ -1,0 +1,29 @@
+.error-page {
+    position: relative;
+    background: center center no-repeat url("../backgrounds/login.jpg");
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.error-info {
+    color: #FFF;
+    text-align: center;
+}
+
+.error-info button {
+    margin-top: 2rem;
+    padding: 1rem 1.5rem;
+    border-radius: .5rem;
+    background-color: transparent;
+    border-color: #FFF;
+    color: #FFF;
+    transition: background 1s;
+}
+.error-info button:hover {
+    background-color: var(--section-color);
+    cursor: pointer;
+}
+.error-info a {
+    text-decoration: none;
+}

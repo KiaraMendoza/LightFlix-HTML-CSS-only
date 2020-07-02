@@ -1,11 +1,16 @@
 @import './login.css';
 @import './main-page.css';
 @import './detail-page.css';
+@import './others-page.css';
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;;
 }
 
 :root {
@@ -13,6 +18,7 @@
     --secondary-color: #b3b3b3;
     --background-color: #000;
     --copyright-color: #101114;
+    --section-color: #141414;
 }
 
 body {
@@ -25,4 +31,23 @@ body {
 
 img {
     max-width: 100%;
+}
+
+
+h1{
+    font-size: 3rem;
+    font-family: 'Cabin Sketch', cursive;
+    font-weight: 700;
+}
+
+h3.fullmetal {
+    font-family: 'Bangers', cursive;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.8rem;
 }

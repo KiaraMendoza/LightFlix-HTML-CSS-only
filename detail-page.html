@@ -6,7 +6,7 @@
     <link href="./css/styles.css" rel="stylesheet">
     <title>Lightflix - Your friendly streaming platform</title>
 </head>
-<body>
+<body class="detail">
     <nav class="main-nav row">
         <div class="left-nav">
             <a href="./main-page.html" class="main-logo">Lightflix</a>
@@ -23,18 +23,70 @@
         </div>
     </nav>
     <main class="detail-page">
-        <section class="info"></section>
+        <section class="info">
+            <ol class="breadcrumbs">
+                <li><a href="./main-page.html">Home</a></li>
+                <li><a href="./detail-page.html">The Paradise</a></li>
+                <li><a href="./detail-page.html">Season 1</a></li>
+                <li><a href="./detail-page.html">Episode 1</a></li>
+            </ol>
+        </section>
         <section class="movie">
-            <div class="row">
-                <div class="col">
-                    <video autoplay loop muted playsinline src="./backgrounds/beach.mp4" class="header-video w-100"></video>
-                </div>
-                <div class="col">
-                </div>
+            <div class="row-detail">
+                <aside class="video-container col-8">
+                    <h1>The paradise</h1>
+                    <h3>Episode 1 - Season 1</h3>
+                    <video controls src="./backgrounds/beach.mp4" class="w-100"></video>
+                    <div class="video-extended-info">
+                        <p>Year of publication: 2020</p>
+                        <p>Score: 9/10</p>
+                        <p>Sinopsis</p>
+                        <p>
+                            Morbi mattis pharetra tincidunt. Praesent venenatis, ante ut iaculis dignissim, velit nibh congue neque, id semper dolor
+                            massa vel ex. Suspendisse potenti. Quisque tellus dui, auctor ut ligula eget, porttitor egestas ex. Duis vulputate at
+                            arcu at facilisis. Fusce posuere lorem at sem aliquet laoreet.
+                        </p>
+                        <p>Actors</p>
+                        <div class="actors-grid">
+                            <div>
+                                <img src="./images/actress.png" alt="Female actor">
+                                <p>Light</p>
+                            </div>
+                            <div>
+                                <img src="./images/actor.png" alt="Male actor">
+                                <p>Oriol</p>
+                            </div>
+                            <div>
+                                <img src="./images/actor.png" alt="Male actor">
+                                <p>Jose</p>
+                            </div>
+                            <div>
+                                <img src="./images/actress.png" alt="Female actor">
+                                <p>Kiara</p>
+                            </div>
+                            <div>
+                                <img src="./images/actress.png" alt="Female actor">
+                                <p>Eva</p>
+                            </div>
+                            <div>
+                                <img src="./images/actress.png" alt="Female actor">
+                                <p>Lucía</p>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+                <aside class="related-media col-4">
+                    <h3>Related media</h3>
+                    <div class="related-media-grid">
+                        <a href="./detail-page.html"><img src="./backgrounds/login.jpg" alt="related media image"></a>
+                        <a href="./detail-page.html"><img src="./backgrounds/login.jpg" alt="related media image"></a>
+                        <a href="./detail-page.html"><img src="./backgrounds/login.jpg" alt="related media image"></a>
+                        <a href="./detail-page.html"><img src="./backgrounds/login.jpg" alt="related media image"></a>
+                    </div>
+                </aside>
             </div>
         </section>
     </main>
-    <aside class="related-media"></aside>
     <footer class="main-footer login-footer">
         <div class="row">
             <a href="#">Legal terms</a>
