@@ -64,7 +64,7 @@
 }
 
 .login-form input {
-    background: #333;
+    background: rgb(232, 240, 254);
     border-radius: 4px;
     padding: 10px 20px;
     margin: 0 auto;
