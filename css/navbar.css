@@ -1,0 +1,150 @@
+.main-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(0,0,0,0.4);
+    position: fixed;
+    width: 100%;
+    max-width: 100%;
+    z-index: 9;
+    color: #FFF;
+    top: 0;
+    height: 3rem;
+    padding: 2rem 0;
+}
+
+.left-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.main-logo {
+    font-size: 2rem;
+    color: #FFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline;
+}
+
+.nav-list {
+    flex-direction: column;
+    list-style: none;
+    padding: 10px 0 10px 30px;
+    display: none;
+}
+
+.nav-list li {
+    flex-grow: 1;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.nav-list input[type="search"] {
+    order: -1;
+}
+
+.nav-list li:hover {
+    background-color: #F4F4F4;
+}
+
+.nav-list li:hover > a {
+    color: #000;
+}
+.menu-label {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 2.5rem;
+    position: absolute;
+    top: 1.2rem;
+}
+.burger-label {
+    left: .5rem;
+}
+.menu-label:before {
+    content: '';
+    background-color: darkgray;
+    width: 1em;
+    height: 0.3rem;
+    position: absolute;
+    box-shadow: 0 0.25em 0 0 darkgray, 0 0.5em 0 0 darkgray;
+}
+
+.menu-checkbox {
+    display: none;
+}
+
+.burger-checkbox:checked ~ .nav-list{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--section-color);
+    opacity: 0.85;
+    padding: 0;
+    height: calc(100vh - 3rem);
+    position: absolute;
+    width: 100vw;
+    margin-top: 50vh;
+}
+.burger-checkbox:checked ~ .nav-list li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    font-size: 1.5rem;
+}
+.nav-search {
+    padding: .3rem .8rem;
+    border-radius: 1rem;
+}
+
+@media (min-width: 1701px) {
+    .main-nav .left-nav {
+        justify-content: start;    
+        width: 50%;
+    }
+}
+
+@media (min-width: 1400px) and (max-width: 1700px){
+    .main-nav .left-nav {
+        justify-content: start;    
+        width: 60%;
+    }
+}
+
+@media(min-width: 1120px) {
+    .main-nav {
+        padding: 1rem 2rem 1rem;
+    }
+    .left-nav {
+        justify-content: start;    
+        width: 80%;
+    }
+    .nav-list {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .left-nav .nav-list {
+        margin-top: 0;
+    }
+    .menu-label {
+        display: none;
+    }
+    .main-nav .nav-list li:last-child {
+        position: absolute;
+        right: 2rem;
+        padding: 10px 20px;
+    }
+    .nav-list input[type="search"] {
+        order: 1;
+        margin-left: 1rem;
+    }
+}
+
+@media (min-width: 768px) {
+}

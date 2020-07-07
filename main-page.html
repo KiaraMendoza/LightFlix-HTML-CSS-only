@@ -10,34 +10,21 @@
     <nav class="main-nav row">
         <div class="left-nav">
             <a href="./main-page.html" class="main-logo">Lightflix</a>
-            <div>
-                <ul class="nav-list">
-                    <li><a href="#">Intro</a></li>
-                    <li><a href="#">TV Series</a></li>
-                    <li><a href="#">Movies</a></li>
-                    <li><a href="#">Recent</a></li>
-                    <li><a href="#">My list</a></li>
-                    <li><a href="./login.html">Logout</a></li>
-                </ul>
-            </div>
+            <input type="checkbox" id="burger-checkbox" class="burger-checkbox menu-checkbox" />
+            <label for="burger-checkbox" class="burger-label menu-label"></label>
+            <ul class="nav-list">
+                <input type="search" name="search" id="nav-search" class="nav-search" placeholder="Search...">
+                <li><a href="./main-page.html">Home</a></li>
+                <li><a href="#continue-watching">Continue Watching</a></li>
+                <li><a href="#movies">Movies</a></li>
+                <li><a href="#recent">Recent</a></li>
+                <li><a href="#your-list">Your list</a></li>
+                <li><a href="./login.html">Logout</a></li>
+            </ul>
         </div>
-        <!-- <div class="right-nav">
-            <label for="nav-search">Search</label>
-            <input type="search" name="search" id="nav-search" class="nav-search">
-            <div>
-                <label for="sub-menu" class="sub-menu-label"></label>
-                <input type="checkbox" id="sub-menu">
-                <ul class="sub-menu">
-                    <li>User 1</li>
-                    <li>User 2</li>
-                    <li>User 3</li>
-                    <li>User 4</li>
-                </ul>
-            </div>
-        </div> -->
     </nav>
     <header class="main-page-header">
-        <video autoplay loop muted playsinline src="./backgrounds/beach.mp4" class="header-video w-100"></video>
+        <video autoplay loop muted playsinline src="./backgrounds/beach.mp4" class="header-video"></video>
         <div class="overlay"></div>
         <div class="header-info">
             <h1>The paradise</h1>
@@ -49,13 +36,13 @@
         </div>
     </header>
     <main class="main-page">
-        <section class="your-list">
-            <h2>Your list</h2>
+        <section id="continue-watching" class="your-list">
+            <h2>Continue Watching</h2>
             <div class="grid">
                 <a href="./detail-page.html">
                     <div class="grid-item movie-container">
                         <div class="movie-image">
-                            <img src="./backgrounds/login.jpg">
+                            <img src="./images/fma.png" alt="full metal alchemist">
                         </div>
                         <div class="movie-rates">
                             <input class="like-checkbox" type="checkbox">
@@ -75,7 +62,7 @@
                 <a href="./detail-page.html">
                     <div class="grid-item movie-container">
                         <div class="movie-image">
-                            <img src="./backgrounds/login.jpg">
+                            <img src="./images/tp.png" alt="the paradise">
                         </div>
                         <div class="movie-rates">
                             <input class="like-checkbox" type="checkbox">
@@ -95,7 +82,7 @@
                 <a href="./detail-page.html">
                     <div class="grid-item movie-container">
                         <div class="movie-image">
-                            <img src="./backgrounds/login.jpg">
+                            <img src="./images/dgm.png" alt="d gray man">
                         </div>
                         <div class="movie-rates">
                             <input class="like-checkbox" type="checkbox">
@@ -115,7 +102,7 @@
                 <a href="./detail-page.html">
                     <div class="grid-item movie-container">
                         <div class="movie-image">
-                            <img src="./backgrounds/login.jpg">
+                            <img src="./images/llife.png" alt="light life">
                         </div>
                         <div class="movie-rates">
                             <input class="like-checkbox" type="checkbox">
@@ -123,8 +110,28 @@
                         <div class="movie-summary">
                             <video autoplay loop muted playsinline src="./backgrounds/horse.mp4"></video>
                             <div class="movie-info">
-                                <h3 class="fullmetal">Light's life</h3>
+                                <h3 class="fullmetal">Final Fantasy X</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
+                                    Donec nec eros sed est suscipit viverra id ut diam.
+                                </p>
+                                <p>2020 - 9/10</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="./detail-page.html">
+                    <div class="grid-item movie-container">
+                        <div class="movie-image">
+                            <img src="./images/fma.png" alt="full metal alchemist">
+                        </div>
+                        <div class="movie-rates">
+                            <input class="like-checkbox" type="checkbox">
+                        </div>
+                        <div class="movie-summary">
+                            <video autoplay loop muted playsinline src="./backgrounds/sunset.mp4"></video>
+                            <div class="movie-info">
+                                <h3 class="fullmetal">Full Metal Alchemist: BrotherHood</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br/> 
                                     Donec nec eros sed est suscipit viverra id ut diam.
                                 </p>
                                 <p>2020 - 9/10</p>
@@ -134,13 +141,13 @@
                 </a>
             </div>
         </section>
-        <section class="your-list">
+        <section id="your-list" class="your-list">
             <h2>Your list</h2>
             <div class="grid">
                 <a href="./detail-page.html">
                     <div class="grid-item movie-container">
                         <div class="movie-image">
-                            <img src="./backgrounds/login.jpg">
+                            <img src="./images/fma.png" alt="full metal alchemist">
                         </div>
                         <div class="movie-rates">
                             <input class="like-checkbox" type="checkbox">
@@ -160,7 +167,7 @@
                 <a href="./detail-page.html">
                     <div class="grid-item movie-container">
                         <div class="movie-image">
-                            <img src="./backgrounds/login.jpg">
+                            <img src="./images/tp.png" alt="the paradise">
                         </div>
                         <div class="movie-rates">
                             <input class="like-checkbox" type="checkbox">
@@ -180,7 +187,7 @@
                 <a href="./detail-page.html">
                     <div class="grid-item movie-container">
                         <div class="movie-image">
-                            <img src="./backgrounds/login.jpg">
+                            <img src="./images/dgm.png" alt="d gray man">
                         </div>
                         <div class="movie-rates">
                             <input class="like-checkbox" type="checkbox">
@@ -200,7 +207,7 @@
                 <a href="./detail-page.html">
                     <div class="grid-item movie-container">
                         <div class="movie-image">
-                            <img src="./backgrounds/login.jpg">
+                            <img src="./images/llife.png" alt="light life">
                         </div>
                         <div class="movie-rates">
                             <input class="like-checkbox" type="checkbox">
@@ -208,7 +215,237 @@
                         <div class="movie-summary">
                             <video autoplay loop muted playsinline src="./backgrounds/horse.mp4"></video>
                             <div class="movie-info">
-                                <h3 class="fullmetal">Light's life</h3>
+                                <h3 class="fullmetal">Final Fantasy X</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
+                                    Donec nec eros sed est suscipit viverra id ut diam.
+                                </p>
+                                <p>2020 - 9/10</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="./detail-page.html">
+                    <div class="grid-item movie-container">
+                        <div class="movie-image">
+                            <img src="./images/fma.png" alt="full metal alchemist">
+                        </div>
+                        <div class="movie-rates">
+                            <input class="like-checkbox" type="checkbox">
+                        </div>
+                        <div class="movie-summary">
+                            <video autoplay loop muted playsinline src="./backgrounds/sunset.mp4"></video>
+                            <div class="movie-info">
+                                <h3 class="fullmetal">Full Metal Alchemist: BrotherHood</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
+                                    Donec nec eros sed est suscipit viverra id ut diam.
+                                </p>
+                                <p>2020 - 9/10</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section id="recent" class="your-list">
+            <h2>Recent</h2>
+            <div class="grid">
+                <a href="./detail-page.html">
+                    <div class="grid-item movie-container">
+                        <div class="movie-image">
+                            <img src="./images/fma.png" alt="full metal alchemist">
+                        </div>
+                        <div class="movie-rates">
+                            <input class="like-checkbox" type="checkbox">
+                        </div>
+                        <div class="movie-summary">
+                            <video autoplay loop muted playsinline src="./backgrounds/sunset.mp4"></video>
+                            <div class="movie-info">
+                                <h3 class="fullmetal">Full Metal Alchemist</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
+                                    Donec nec eros sed est suscipit viverra id ut diam.
+                                </p>
+                                <p>2020 - 9/10</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="./detail-page.html">
+                    <div class="grid-item movie-container">
+                        <div class="movie-image">
+                            <img src="./images/tp.png" alt="the paradise">
+                        </div>
+                        <div class="movie-rates">
+                            <input class="like-checkbox" type="checkbox">
+                        </div>
+                        <div class="movie-summary">
+                            <video autoplay loop muted playsinline src="./backgrounds/beach.mp4"></video>
+                            <div class="movie-info">
+                                <h3 class="fullmetal">The Paradise</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
+                                    Donec nec eros sed est suscipit viverra id ut diam.
+                                </p>
+                                <p>2020 - 9/10</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="./detail-page.html">
+                    <div class="grid-item movie-container">
+                        <div class="movie-image">
+                            <img src="./images/dgm.png" alt="d gray man">
+                        </div>
+                        <div class="movie-rates">
+                            <input class="like-checkbox" type="checkbox">
+                        </div>
+                        <div class="movie-summary">
+                            <video autoplay loop muted playsinline src="./backgrounds/eod.mp4"></video>
+                            <div class="movie-info">
+                                <h3 class="fullmetal">D-Gray Man</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
+                                    Donec nec eros sed est suscipit viverra id ut diam.
+                                </p>
+                                <p>2020 - 9/10</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="./detail-page.html">
+                    <div class="grid-item movie-container">
+                        <div class="movie-image">
+                            <img src="./images/llife.png" alt="light life">
+                        </div>
+                        <div class="movie-rates">
+                            <input class="like-checkbox" type="checkbox">
+                        </div>
+                        <div class="movie-summary">
+                            <video autoplay loop muted playsinline src="./backgrounds/horse.mp4"></video>
+                            <div class="movie-info">
+                                <h3 class="fullmetal">Final Fantasy X</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
+                                    Donec nec eros sed est suscipit viverra id ut diam.
+                                </p>
+                                <p>2020 - 9/10</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="./detail-page.html">
+                    <div class="grid-item movie-container">
+                        <div class="movie-image">
+                            <img src="./images/fma.png" alt="full metal alchemist">
+                        </div>
+                        <div class="movie-rates">
+                            <input class="like-checkbox" type="checkbox">
+                        </div>
+                        <div class="movie-summary">
+                            <video autoplay loop muted playsinline src="./backgrounds/sunset.mp4"></video>
+                            <div class="movie-info">
+                                <h3 class="fullmetal">Full Metal Alchemist: BrotherHood</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
+                                    Donec nec eros sed est suscipit viverra id ut diam.
+                                </p>
+                                <p>2020 - 9/10</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section id="movies" class="your-list">
+            <h2>Movies</h2>
+            <div class="grid">
+                <a href="./detail-page.html">
+                    <div class="grid-item movie-container">
+                        <div class="movie-image">
+                            <img src="./images/fma.png" alt="full metal alchemist">
+                        </div>
+                        <div class="movie-rates">
+                            <input class="like-checkbox" type="checkbox">
+                        </div>
+                        <div class="movie-summary">
+                            <video autoplay loop muted playsinline src="./backgrounds/sunset.mp4"></video>
+                            <div class="movie-info">
+                                <h3 class="fullmetal">Full Metal Alchemist</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
+                                    Donec nec eros sed est suscipit viverra id ut diam.
+                                </p>
+                                <p>2020 - 9/10</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="./detail-page.html">
+                    <div class="grid-item movie-container">
+                        <div class="movie-image">
+                            <img src="./images/tp.png" alt="the paradise">
+                        </div>
+                        <div class="movie-rates">
+                            <input class="like-checkbox" type="checkbox">
+                        </div>
+                        <div class="movie-summary">
+                            <video autoplay loop muted playsinline src="./backgrounds/beach.mp4"></video>
+                            <div class="movie-info">
+                                <h3 class="fullmetal">The Paradise</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
+                                    Donec nec eros sed est suscipit viverra id ut diam.
+                                </p>
+                                <p>2020 - 9/10</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="./detail-page.html">
+                    <div class="grid-item movie-container">
+                        <div class="movie-image">
+                            <img src="./images/dgm.png" alt="d gray man">
+                        </div>
+                        <div class="movie-rates">
+                            <input class="like-checkbox" type="checkbox">
+                        </div>
+                        <div class="movie-summary">
+                            <video autoplay loop muted playsinline src="./backgrounds/eod.mp4"></video>
+                            <div class="movie-info">
+                                <h3 class="fullmetal">D-Gray Man</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
+                                    Donec nec eros sed est suscipit viverra id ut diam.
+                                </p>
+                                <p>2020 - 9/10</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="./detail-page.html">
+                    <div class="grid-item movie-container">
+                        <div class="movie-image">
+                            <img src="./images/llife.png" alt="light life">
+                        </div>
+                        <div class="movie-rates">
+                            <input class="like-checkbox" type="checkbox">
+                        </div>
+                        <div class="movie-summary">
+                            <video autoplay loop muted playsinline src="./backgrounds/horse.mp4"></video>
+                            <div class="movie-info">
+                                <h3 class="fullmetal">Final Fantasy X</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
+                                    Donec nec eros sed est suscipit viverra id ut diam.
+                                </p>
+                                <p>2020 - 9/10</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="./detail-page.html">
+                    <div class="grid-item movie-container">
+                        <div class="movie-image">
+                            <img src="./images/fma.png" alt="full metal alchemist">
+                        </div>
+                        <div class="movie-rates">
+                            <input class="like-checkbox" type="checkbox">
+                        </div>
+                        <div class="movie-summary">
+                            <video autoplay loop muted playsinline src="./backgrounds/sunset.mp4"></video>
+                            <div class="movie-info">
+                                <h3 class="fullmetal">Full Metal Alchemist: BrotherHood</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
                                     Donec nec eros sed est suscipit viverra id ut diam.
                                 </p>

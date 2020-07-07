@@ -72,9 +72,14 @@
     text-align: center;
 }
 
+.actors-grid img {
+    max-width: 100px;
+    width: 100%;
+}
+
 @media (min-width: 1200px) {
     .actors-grid {
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(10, 1fr);
         grid-template-rows: repeat(auto, 2fr);
     }
 }

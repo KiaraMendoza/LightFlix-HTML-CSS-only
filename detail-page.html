@@ -4,22 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./css/styles.css" rel="stylesheet">
-    <title>Lightflix - Your friendly streaming platform</title>
+    <title>Lightflix - The Paradise S1E1 </title>
 </head>
 <body class="detail">
     <nav class="main-nav row">
         <div class="left-nav">
             <a href="./main-page.html" class="main-logo">Lightflix</a>
-            <div>
-                <ul class="nav-list">
-                    <li><a href="#">Intro</a></li>
-                    <li><a href="#">TV Series</a></li>
-                    <li><a href="#">Movies</a></li>
-                    <li><a href="#">Recent</a></li>
-                    <li><a href="#">My list</a></li>
-                    <li><a href="./login.html">Logout</a></li>
-                </ul>
-            </div>
+            <input type="checkbox" id="burger-checkbox" class="burger-checkbox menu-checkbox" />
+            <label for="burger-checkbox" class="burger-label menu-label"></label>
+            <ul class="nav-list">
+                <input type="search" name="search" id="nav-search" class="nav-search" placeholder="Search...">
+                <li><a href="./main-page.html">Home</a></li>
+                <li><a href="./main-page.html#continue-watching">Continue Watching</a></li>
+                <li><a href="./main-page.html#movies">Movies</a></li>
+                <li><a href="./main-page.html#recent">Recent</a></li>
+                <li><a href="./main-page.html#your-list">Your list</a></li>
+                <li><a href="./login.html">Logout</a></li>
+            </ul>
         </div>
     </nav>
     <main class="detail-page">

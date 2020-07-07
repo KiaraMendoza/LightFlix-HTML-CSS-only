@@ -60,6 +60,7 @@
 .login-form label {
     font-size: 1.2rem;
     margin: 1.2rem 0 .75rem;
+    display: block;
 }
 
 .login-form input {
@@ -67,6 +68,7 @@
     border-radius: 4px;
     padding: 10px 20px;
     margin: 0 auto;
+    display: block;
 }
 
 .login-form input::placeholder {
@@ -82,6 +84,7 @@
     border: 0;
     margin: 15px auto;
     transition: all .5s;
+    display: block;
 }
 
 .login-form button[type="submit"]:hover {

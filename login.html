@@ -10,14 +10,14 @@
     <main class="login-form-page">
         <a href="./login.html" class="login-logo">Lightflix</a>
         <section class="login-form-container">
-            <form class="login-form" id="login-form" name="login-form">
+            <form action="./main-page.html" class="login-form" id="login-form" name="login-form">
                 <fieldset>
                     <legend>Login</legend>
                     <label for="email">Your email</label>
-                    <input type="email" minlength="5" name="email" id="email" placeholder="example@domain.com">
+                    <input type="email" minlength="5" name="email" id="email" placeholder="example@domain.com" required>
                     <label for="password">Your password</label>
-                    <input type="password" minlength="6" name="password" id="password" placeholder="str0ngP4ss!">
-                    <button type="submit"><a href="./main-page.html">Login</a></button>
+                    <input type="password" minlength="6" name="password" id="password" placeholder="str0ngP4ss!" required>
+                    <button type="submit">Login</button>
                 </fieldset>
             </form>
             <a href="/reset-password">Don't remember your password?</a>
