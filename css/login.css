@@ -28,6 +28,7 @@
     background-color: var(--background-color);
     color: #FFF;
     opacity: 0.75;
+    margin-top: 10vh;
 }
 
 .login-form-container a {
@@ -129,7 +130,6 @@
     .login-form-container {
         height: 50%;
         width: 30%;
-        margin: auto;
     }
 }
 
@@ -137,11 +137,13 @@
     .login-form > fieldset {
         margin: 0 20px;
     }
+    .login-form-container {
+        margin: auto;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1119px) {
     .login-form-container {
         width: 45%;
-        margin: auto;
     }
 }

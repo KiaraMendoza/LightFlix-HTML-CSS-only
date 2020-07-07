@@ -12,13 +12,16 @@
 .breadcrumbs {
     list-style-type: none;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .breadcrumbs li {
     margin-right: 0.5rem;
+    font-size: .8rem;
 }
 
 .breadcrumbs a {
+    font-size: .8rem;
     text-decoration: none;
     color: var(--secondary-color);
 }
