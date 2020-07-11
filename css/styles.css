@@ -3,6 +3,7 @@
 @import './main-page.css';
 @import './detail-page.css';
 @import './others-page.css';
+@import './footer.css';
 @import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
@@ -22,7 +23,7 @@
     --section-color: #141414;
 }
 
-html {
+html, body {
     overflow-x: hidden;
 }
 

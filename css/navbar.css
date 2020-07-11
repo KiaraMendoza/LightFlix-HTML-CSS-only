@@ -91,7 +91,8 @@
     height: 95vh;
     position: absolute;
     width: 100vw;
-    margin-top: 100vh;
+    margin-top: 4rem;
+    top: 0;
 }
 .burger-checkbox:checked ~ .nav-list li a{
     display: flex;
@@ -106,14 +107,14 @@
 @media (min-width: 1701px) {
     .main-nav .left-nav {
         justify-content: start;    
-        width: 50%;
+        width: 60%;
     }
 }
 
 @media (min-width: 1400px) and (max-width: 1700px){
     .main-nav .left-nav {
         justify-content: start;    
-        width: 60%;
+        width: 75%;
     }
 }
 
@@ -123,7 +124,7 @@
     }
     .left-nav {
         justify-content: start;    
-        width: 80%;
+        width: 90%;
     }
     .nav-list {
         display: flex;
