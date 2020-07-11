@@ -88,10 +88,10 @@
     background-color: var(--section-color);
     opacity: 0.85;
     padding: 0;
-    height: calc(100vh - 3rem);
+    height: 95vh;
     position: absolute;
     width: 100vw;
-    margin-top: 50vh;
+    margin-top: 100vh;
 }
 .burger-checkbox:checked ~ .nav-list li a{
     display: flex;

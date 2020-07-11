@@ -71,7 +71,7 @@
     display: grid;
     grid-auto-rows: 180px;
     grid-gap: 1rem;
-    grid-template-columns: repeat(1, 320px);
+    /* grid-template-columns: repeat(1, 320px); */
 }
 
 .grid a {
@@ -129,6 +129,9 @@
 .main-footer {
     opacity: 1;
 }
+.grid {
+    grid-template-columns: repeat(5, 320px);
+}
 
 @media(min-width: 1500px) {
     .grid {
@@ -137,9 +140,9 @@
 }
 
 @media (min-width: 1200px) and (max-width: 1499px) {
-    .grid {
+    /* .grid {
         grid-template-columns: repeat(3, 320px);
-    }
+    } */
     .main-page section {
         padding: 2rem 5rem 2rem;
     }
@@ -168,9 +171,9 @@
     }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
-    .grid {
+    /* .grid {
         grid-template-columns: repeat(2, 320px);
-    }
+    } */
     
     .grid-item:hover{
         z-index: 2;
@@ -204,7 +207,33 @@
 }
 
 @media (min-width: 600px) and (max-width: 767px) {
-    .grid {
+    /* .grid {
         grid-template-columns: repeat(2, 320px);
-    }
+    } */
+}
+    
+/* Extras */
+
+.main-page section .grid {
+    position: relative;
+}
+
+.next {
+    position: absolute;
+    z-index: 5;
+    right: -40px;
+    top: 30%;
+    padding: .5rem 1.2rem;
+    font-size: 2rem;
+    color: #FFF;
+    border: 0;
+    outline: none;
+    background-color: var(--section-color);
+    transition: .5s all;
+    cursor: pointer;
+}
+
+.next:hover, .next:focus {
+    background-color: #FFF;
+    color:  var(--section-color);
 }
