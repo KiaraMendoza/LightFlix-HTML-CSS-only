@@ -233,7 +233,7 @@
     cursor: pointer;
 }
 
-.next:hover, .next:focus {
+.next:hover {
     background-color: #FFF;
     color:  var(--section-color);
 }

@@ -22,7 +22,7 @@
     --section-color: #141414;
 }
 
-body {
+html {
     overflow-x: hidden;
 }
 
@@ -51,8 +51,4 @@ h2{
 
 h3{
     font-size: 1.8rem;
-}
-
-body {
-    overflow-x: hidden;
 }
