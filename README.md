@@ -10,3 +10,6 @@ The exercise is about making a simple version of any multi-media streaming web-a
 *From less used to more*
 + HTML
 + CSS
+
+## Link to live demo:
+[LigthFlix](https://kiaramendoza.github.io/LightFlix-HTML-CSS-only/login.html)
