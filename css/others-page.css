@@ -1,4 +1,4 @@
-.error-page {
+.error-page, .coming-page {
     position: relative;
     background: center center no-repeat url("../backgrounds/login.jpg");
     height: 100vh;
@@ -6,12 +6,19 @@
     justify-content: center;
     align-items: center;
 }
-.error-info {
+.coming-page {
+    background: center center no-repeat url("../backgrounds/login.jpg");
+}
+.error-info h2, .coming-info h2{ 
+    margin: .5rem 0;
+}
+
+.error-info, .coming-info {
     color: #FFF;
     text-align: center;
 }
 
-.error-info button {
+.error-info button, .coming-info button{
     margin-top: 2rem;
     padding: 1rem 1.5rem;
     border-radius: .5rem;
@@ -20,10 +27,13 @@
     color: #FFF;
     transition: background 1s;
 }
-.error-info button:hover {
+.error-info button:hover, .coming-info button:hover {
     background-color: var(--section-color);
     cursor: pointer;
 }
-.error-info a {
-    text-decoration: none;
+
+.counter {
+    font-size: 1.5rem;
+    display: block;
+    margin: 1rem 0;
 }
