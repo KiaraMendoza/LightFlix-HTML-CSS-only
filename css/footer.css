@@ -1,4 +1,4 @@
-.login-footer {
+.main-footer {
     min-height: 100px;
     width: 100%;
     background-color: var(--background-color);
@@ -9,10 +9,10 @@
     margin: auto 0 0;
 }
 
-.login-footer .row {
+.main-footer .row {
     display: flex;
     justify-content: space-between;
-    width: 60%;
+    width: 100%;
     margin: 0 auto;
     padding: 20px;
     flex-grow: 2;
@@ -39,6 +39,7 @@
     height: 1px;
     color: #FFF;
     border: 1px solid;
+    margin: auto;
 }
 
 @media (min-width: 768px) {
@@ -52,5 +53,9 @@
         width: 1px;
         color: #FFF;
         border: 1px solid;
+    }
+    
+    .main-footer .row {
+        width: 60%;
     }
 }
